@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Form</title>
+
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background-color: rgb(139, 132, 132);
+      }
+
+      /* Main Box */
+      .main_box {
+        width: 350px;
+        height: 530px;
+        border: 1px solid #bebaba;
+        border-radius: 5px;
+        margin: 40px auto;
+        background-color: white;
+        box-shadow:
+          2px 4px 6px #eeece9,
+          -2px -4px 6px #ffffff;
+      }
+
+      p {
+        font-size: 40px;
+      }
+
+      .main_box p,
+      h5 {
+        text-align: center;
+        line-height: 10px;
+      }
+
+      h5 {
+        line-height: 5px;
+      }
+
+      /* Input Container */
+      .input {
+        width: 300px;
+        height: 210px;
+        padding: 0 40px;
+        line-height: 40px;
+        opacity: 0.5;
+        transition: 0.3s ease;
+      }
+
+      /* 👑 MAGIC PART */
+      .input:focus-within {
+        opacity: 1;
+      }
+
+      /* Inputs */
+      .input input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 16px;
+      }
+
+      /* Bottom line */
+      .input hr {
+        border: none;
+        border-bottom: 1px solid #999;
+        margin-bottom: 20px;
+      }
+
+      /* Active line */
+      .input input:focus + hr {
+        border-bottom: 2px solid blue;
+      }
+
+      /* Button */
+      .sign-up-btn {
+        width: 330px;
+        height: 45px;
+        background-color: rgb(68, 68, 255);
+        margin: 0 auto;
+        border-radius: 5px;
+        transition: 0.4s;
+      }
+
+      .sign-up-btn a {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        position: relative;
+        top: 8px;
+        left: 118px;
+      }
+
+      .sign-up-btn:hover {
+        transform: translateY(-6px);
+        background-color: blue;
+        border-radius: 10px;
+      }
+
+      /* Checkbox */
+      input[type="checkbox"],
+      #remeber {
+        position: relative;
+        left: 35px;
+      }
+
+      /* Divider */
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        opacity: 0.5;
+      }
+
+      .acess {
+        justify-self: center;
+      }
+
+      /* Social Buttons */
+      #container {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        top: 25px;
+      }
+
+      .social_btn {
+        width: 75px;
+        height: 22px;
+        border: 1px solid #7c7272;
+        text-align: center;
+        border-radius: 5px;
+        transition: 0.4s;
+      }
+
+      .social_btn a {
+        text-decoration: none;
+        font-size: 15px;
+        color: blue;
+        font-weight: bolder;
+        position: relative;
+        top: 2px;
+      }
+
+      .social_btn:hover {
+        transform: translateY(-6px);
+        border-radius: 10px;
+        box-shadow: 0 4px 6px blue;
+      }
+
+      /* Footer */
+      .footer-msg h5 {
+        opacity: 0.5;
+        position: relative;
+        right: 40px;
+        bottom: 10px;
+      }
+
+      .footer-msg a {
+        position: absolute;
+        left: 720px;
+        bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main_box">
+      <p>Sign up</p>
+      <h5>Sign up to continue</h5>
+
+      <form>
+        <div class="input">
+          <label>Name:</label>
+          <input type="text" />
+          <hr />
+
+          <label>E-mail:</label>
+          <input type="email" />
+          <hr />
+
+          <label>Password:</label>
+          <input type="password" />
+          <hr />
+        </div>
+
+        <div class="sign-up-btn">
+          <a href="#">Sign up</a>
+        </div>
+
+        <br />
+
+        <input type="checkbox" id="remeber" />
+        <label for="remeber"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Remember me</label
+        >
+      </form>
+
+      <br />
+
+      <div class="grid">
+        <div><hr /></div>
+        <div class="acess">Access Quickly</div>
+        <div><hr /></div>
+      </div>
+
+      <div id="container">
+        <div class="social_btn"><a href="#">Google</a></div>
+        <div class="social_btn"><a href="#">Linkedin</a></div>
+        <div class="social_btn"><a href="#">SSO</a></div>
+      </div>
+    </div>
+
+    <div class="footer-msg">
+      <h5>Already have an account?</h5>
+      <a href="#">Sign in</a>
+    </div>
+  </body>
+</html>
