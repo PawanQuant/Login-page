@@ -17,10 +17,10 @@
       /* Main Box */
       .main_box {
         width: 350px;
-        height: 530px;
+        height: 560px;
         border: 1px solid #bebaba;
         border-radius: 5px;
-        margin: 40px auto;
+        margin: 60px auto;
         background-color: white;
         box-shadow:
           2px 4px 6px #eeece9,
@@ -155,15 +155,20 @@
       .footer-msg h5 {
         opacity: 0.5;
         position: relative;
-        right: 40px;
-        bottom: 10px;
+        right: 60px;
+        top: 30px;
       }
 
       .footer-msg a {
         position: absolute;
-        left: 720px;
-        bottom: 20px;
+        left: 800px;
+        bottom: 135px;
+        text-decoration: none;
       }
+
+      .footer-msg a:hover {
+        text-decoration: underline;
+      } 
     </style>
   </head>
 
@@ -212,11 +217,15 @@
         <div class="social_btn"><a href="#">Linkedin</a></div>
         <div class="social_btn"><a href="#">SSO</a></div>
       </div>
+        <div class="footer-msg">
+        <h5>Already have an account?</h5>
+        <a href="#">Sign in</a>
+      </div>
     </div>
 
-    <div class="footer-msg">
+    <!-- <div class="footer-msg">
       <h5>Already have an account?</h5>
       <a href="#">Sign in</a>
-    </div>
+    </div> -->
   </body>
 </html>
