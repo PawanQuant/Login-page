@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/home", (req, res) => {
-    res.render("home");
+    res.send("home");
 });
 
 app.get("/data", (req, res) => {
