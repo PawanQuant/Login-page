@@ -34,10 +34,19 @@ app.get("/data", (req, res) => {
     res.render("data", { users: users });
 });
 
+// app.post("/data", (req, res) => {
+//     const { name, email, password } = req.body;
+//     users.push({ name, email, password });
+//     res.redirect("/data");
+// });
+
 app.post("/data", (req, res) => {
     const { name, email, password } = req.body;
+    if(!name || !email) {
+        return res.send("Bhai, details toh bharo!");
+    }
     users.push({ name, email, password });
-    res.redirect("/home");
+    res.redirect("/data");
 });
 
 app.listen(port, () => {
