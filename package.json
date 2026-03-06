@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "ejs": "^5.0.1",
+    "express": "^5.2.1"
+  },
+  "name": "login-page",
+  "version": "1.0.0",
+  "description": "A responsive Login Page built using HTML and CSS.  This project is part of my frontend learning journey.  It includes form validation UI, clean layout, and modern design.",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PawanQuant/Login-page.git"
+  },
+  "keywords": [],
+  "author": "pawan kumar",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/PawanQuant/Login-page/issues"
+  },
+  "homepage": "https://github.com/PawanQuant/Login-page#readme"
+}
